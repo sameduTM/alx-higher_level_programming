@@ -1,5 +1,4 @@
 #!/bin/bash
-# Save the Python code to a temporary file
 tempfile=$(mktemp /tmp/pycode.XXXXXXXXXX.py)
 echo "$PYCODE" > "$tempfile"
 python3 "$tempfile"
