@@ -1,4 +1,2 @@
 #!/bin/bash
-tempfile=$(mktemp /tmp/pycode.XXXXXXXXXX.py)
-echo "$PYCODE" > "$tempfile"
-python3 "$tempfile"
+python3 -c  "$PYCODE"
