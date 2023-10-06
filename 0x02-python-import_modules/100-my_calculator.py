@@ -5,12 +5,12 @@ x = sys.argv
 if __name__ == "__main__":
     if len(x) < 2:
         exit(1)
-    a = int(x[1])
-    op = x[2]
-    b = int(x[3])
     if len(x) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
+    a = int(x[1])
+    op = x[2]
+    b = int(x[3])
     if op != '+' and op != '-' and op != '*' and op != '/':
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
