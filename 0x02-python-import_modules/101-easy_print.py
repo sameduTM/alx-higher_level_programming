@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-from pyprint import printr and printr()
+(lambda: (from pyprint import printr, printr()))()
