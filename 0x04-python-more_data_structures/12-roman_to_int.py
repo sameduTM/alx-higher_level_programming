@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
     prev_value = 0
 
     for symbol in roman_string[::-1]:
-        value =  roman_dict.get(symbol, 0)
+        value = roman_dict.get(symbol, 0)
         if value < prev_value:
             integer_value -= value
         else:
