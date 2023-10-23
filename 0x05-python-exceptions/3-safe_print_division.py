@@ -10,5 +10,5 @@ def safe_print_division(a, b):
         print(f"{e}")
     finally:
         if result is not None:
-            print("Inside result:", result)
+            print("Inside result: {:}".format(result))
     return result
