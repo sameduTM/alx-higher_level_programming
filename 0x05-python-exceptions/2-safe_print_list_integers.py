@@ -9,8 +9,9 @@ def safe_print_list_integers(my_list=[], x=0):
             if isinstance(item, int):
                 print("{:d}".format(item), end="")
                 count += 1
-    except (ValueError, TypeError):
-        pass
+    except IndexError:
+        print("Exception: x is out of range")
+
     print()
 
     return count
