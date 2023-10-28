@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if not matrix:
-        print()
-        return
-    max_width = max(len(str(element)) for row in matrix for element in row)
-    for row in matrix:
-        for element in row:
-            print("{:>{width}}".format(element, width=max_width), end=" ")
+    x = len(matrix)
+    for i in range(x):
+        y = len(matrix[i])
+        for j in range(y):
+            print("{:d}".format(matrix[i][j]), end="")
+            if j == 2:
+                continue
+            print(end=" ")
         print()
