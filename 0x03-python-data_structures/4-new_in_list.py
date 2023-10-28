@@ -7,7 +7,7 @@ def new_in_list(my_list, idx, element):
         new_list[i] = my_list[i]
     new_list.insert(idx, element)
     if idx >= len(my_list):
-        new_list.pop(idx - 1)
+        new_list.pop(idx)
     elif idx < len(my_list):
         new_list.pop(idx + 1)
     return new_list
