@@ -5,7 +5,9 @@
 
 
 class Rectangle:
-    """Attributes width and length included"""
+    """Attributes width and length included
+    methods, area and perimeter
+    """
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -35,7 +37,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
-        return 2 * (self.width + self.height)
+        return 2 * (self.__width + self.__height)
