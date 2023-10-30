@@ -4,6 +4,8 @@
 
     This creates a simple rectangle class
 """
+
+
 class Rectangle:
     """Simple Rectangle class."""
     pass
