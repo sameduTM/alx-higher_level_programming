@@ -2,6 +2,8 @@
 """
     Rectangle module
 """
+
+
 class Rectangle:
     """Rectangle object with attr width, height"""
     number_of_instances = 0
