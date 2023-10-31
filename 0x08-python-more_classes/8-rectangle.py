@@ -2,6 +2,8 @@
 """
     Compare rectangles
 """
+
+
 class Rectangle:
     """Atrributes... """
     number_of_instances = 0
