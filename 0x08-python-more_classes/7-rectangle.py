@@ -6,7 +6,6 @@
 
 class Rectangle:
     """Class with attributes width and height"""
-    class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
