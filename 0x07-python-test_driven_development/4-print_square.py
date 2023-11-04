@@ -7,6 +7,7 @@ The module has only one function, print_square
 
 
 def print_square(size):
+    """The function prints square given size"""
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
