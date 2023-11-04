@@ -4,6 +4,8 @@ This is the ``square`` module that prints a square
 
 The module has only one function, print_square
 """
+
+
 def print_square(size):
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
