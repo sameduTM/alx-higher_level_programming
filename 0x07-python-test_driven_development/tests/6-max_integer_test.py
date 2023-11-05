@@ -7,7 +7,9 @@ This is a unittest module for max integer
 
     
 class TestMaxInteger(unittest.TestCase):
+    """ This is a test case class for finding max integer"""
     def test_max_integer(self):
+        """This is max test case function"""
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
 
