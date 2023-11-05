@@ -8,8 +8,10 @@ def matrix_divided(matrix, div):
         isinstance(row, list) and all(
             isinstance(element, (int, float)) for element in row
             ) for row in matrix):
-        if len(set(len(row) for row in matrix)) != 1:
-            raise TypeError("Each row of the matrix must have the same size")
+            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+
+    if len(set(len(row) for row in matrix)) != 1:
+        raise TypeError("Each row of the matrix must have the same size")
 
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
