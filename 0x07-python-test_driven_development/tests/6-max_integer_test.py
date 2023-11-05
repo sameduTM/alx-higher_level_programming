@@ -12,6 +12,11 @@ class TestMaxInteger(unittest.TestCase):
         """This is max test case function"""
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
+        self.assertEqual(max_integer([1]), 1)
+        self.assertEqual(max_integer([]), None)
+        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+        self.assertEqual(max_integer([7, 2, 3, 4]), 7)
+        self.assertEqual(max_integer([1, 2, 3, 4, 5]), 5)
 
 if __name__ == '__main__':
     unittest.main()
