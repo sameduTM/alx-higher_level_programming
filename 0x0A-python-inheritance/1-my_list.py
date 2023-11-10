@@ -24,3 +24,9 @@ class MyList(list):
         sorted_list = self.copy()
         sorted_list.sort()
         print(sorted_list)
+
+    def __str__(self):
+        """string representation of the sorted list."""
+        sorted_list = self.copy()
+        sorted_list.sort()
+        return str(sorted_list)
