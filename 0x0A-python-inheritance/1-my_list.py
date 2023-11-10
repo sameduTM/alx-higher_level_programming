@@ -21,5 +21,6 @@ class MyList(list):
 
         then prints the sorted list.
         """
-        sorted_list = sorted(self)
+        sorted_list = self.copy()
+        sorted_list.sort()
         print(sorted_list)
