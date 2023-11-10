@@ -24,4 +24,5 @@ class MyList(list):
         if all(isinstance(element, int) for element in self):
             sorted_list = self.copy()
             sorted_list.sort()
+            print(sorted_list)
             return sorted_list
