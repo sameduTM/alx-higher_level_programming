@@ -4,7 +4,4 @@
 
 def inherits_from(obj, a_class):
     """This is ``inherits from`` function"""
-    if isinstance(obj, a_class):
-        return True
-    else:
-        return False
+    return any(issubclass(type(obj), cls) for cls in a_class.mro())
