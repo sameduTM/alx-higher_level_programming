@@ -4,9 +4,12 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """This is the only class of the module"""
+    """This is the child class Rectangle"""
     def __init__(self, width, height):
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
+        """This is the only function of the class"""
         self.__width = width
         self.__height = height
+
+        bg = BaseGeometry()
+        bg.integer_validator("width", width)
+        bg.integer_validator("height", height)
