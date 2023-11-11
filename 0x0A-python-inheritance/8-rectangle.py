@@ -4,7 +4,7 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """This is the child class Rectangle"""
+    """This is the child class ``Rectangle``"""
     def __init__(self, width, height):
         """This is the only function of the class"""
         self.__width = width
