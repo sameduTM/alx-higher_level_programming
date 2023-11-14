@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+"""This is the ``Base class`` module"""
+
+
+class Base:
+    """This is the Base class"""
+    __nb_objects = 0
+
+    def __init__(self, id=None):
+        """class constructor"""
+        if id is not None:
+            self.id = id
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
