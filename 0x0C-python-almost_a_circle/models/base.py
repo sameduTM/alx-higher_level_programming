@@ -59,7 +59,7 @@ class Base:
         try:
             with open(filename, mode='r', encoding='utf-8') as f:
                 json_str = f.read()
-                dat = cls.load_from_file(json_str)
+                dat = cls.from_json_string(json_str)
                 return [cls.create(**item) for item in dat]
         except FileNotFoundError:
             return []
