@@ -41,5 +41,7 @@ class GrandChild(Child):
     def getAddress(self):
         return self.address
 
-g = GrandChild("Bling5", 25, "Noida")
-print(g.getAddress(), g.getAge(), g.getName())
+# g = GrandChild("Bling5", 25, "Noida")
+# print(g.getAddress(), g.getAge(), g.getName())
+print(Base.__bases__)
+print(Base.__mro__)
