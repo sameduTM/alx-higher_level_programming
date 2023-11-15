@@ -8,7 +8,8 @@ class Square(Rectangle):
     """This is the Square class that inherits from Rectangle
 
     Args:
-        Rectangle (_type_): _description_
+        Rectangle (_type_): Parent class from which Square class
+            inherits from
     """
 
     def __init__(self, size, x=0, y=0, id=None):
