@@ -1,6 +1,6 @@
 #!/usr/bin/pythom3
-import json
 """This is the base module"""
+import json
 
 
 class Base:
