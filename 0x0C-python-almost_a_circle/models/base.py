@@ -28,7 +28,7 @@ class Base:
                 f.write("[]")
         else:
             obj_list = [obj.to_dictionary() for obj in list_objs]
-            json_str = json.dumps(obj_list)
+            json_str = cls.to_json_string(obj_list)
             with open(f"{cls.__name__}.json", mode='w', encoding='UTF8') as f:
                 f.write(json_str)
 
