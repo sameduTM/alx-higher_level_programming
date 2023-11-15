@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from models.base import Base
 """This is the Rectangle Module - imports from Base Module
 
 Raises:
@@ -17,6 +16,7 @@ Raises:
 Returns:
     dict: A dictionary representation of the rectangle's attributes.
 """
+from models.base import Base
 
 
 class Rectangle(Base):
