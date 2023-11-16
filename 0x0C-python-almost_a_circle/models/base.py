@@ -100,8 +100,8 @@ class Base:
                 reader = csv.reader(f)
                 if cls.__name__ == "Rectangle":
                     return [cls.create(id=int(row[0]), width=int(row[1]),
-                                       height=int(row[3]), x=int(row[4]),
-                                       y=int(row[5])) for row in reader]
+                                       height=int(row[2]), x=int(row[3]),
+                                       y=int(row[4])) for row in reader]
                 elif cls.__name__ == "Square":
                     return [cls.create(id=int(row[0]), size=int(row[1]),
                                        x=int(row[2]),
