@@ -6,17 +6,9 @@ from models.base import Base
 
 
 class TestBase(unittest.TestCase):
-    def test_id(self):
-        id1 = 1
-        id2 = None
-        id3 = 0
+    def test_auto_assign_id(self):
+        my_instance = Base()
+        my_instance1 = Base(id=26)
         
-        my_instance = Base(id1)
-        my_instance2 = Base(id2)
-        
-        self.assertEqual(my_instance.id, id1)
-        self.assertEqual(my_instance2.id, id3 + 1)
-        
- 
-if __name__=='__main__':
-	unittest.main()
+        self.assertEqual(my_instance.id, 1)
+        self.assertEqual(my_instance1.id, 26)
