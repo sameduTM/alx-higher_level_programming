@@ -64,7 +64,7 @@ class Base:
                 return [cls.create(**item) for item in dat]
         except FileNotFoundError:
             return []
-    
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Save a list of objects to a CSV file.
@@ -85,24 +85,24 @@ class Base:
             elif cls.__name__ == 'Square':
                 for obj in list_objs:
                     writer.writerow([obj.id, obj.size, obj.x, obj.y])
-        
-        
+
     @classmethod
     def load_from_file_csv(cls):
         """Load data from a CSV file.
 
         Returns:
-            list: A list containing instances of the class loaded from the CSV file.
+            list: A list containing instances of the class loaded
+                from the CSV file.
         """
         filename = f"{cls.__name__}.csv"
         try:
             with open(filename, mode='r', encoding='utf-8') as f:
                 reader = csv.reader(f)
-                if cls.__name__ == 'Rectangle':
+                if cls.__name__ == "Rectangle":
                     return [cls.create(id=int(row[0]), width=int(row[1]),
                                        x=int(row[3]),
                                        y=int(row[4])) for row in reader]
-                elif cls.__name__ == 'Square':
+                elif cls.__name__ == "Square":
                     return [cls.create(id=int(row[0]), size=int(row[1]),
                                        x=int(row[2]),
                                        y=int(row[3])) for row in reader]
