@@ -13,6 +13,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(my_inst1.id, 2)
         my_inst2 = Base()
         self.assertEqual(my_inst2.id, 3)
+        Base._Base__nb_objects = 0
 
 if __name__ == '__main__':
     unittest.main()
