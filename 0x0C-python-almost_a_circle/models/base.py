@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is the base module"""
+"""This is the base module for the Base class"""
 import json
 import csv
 
