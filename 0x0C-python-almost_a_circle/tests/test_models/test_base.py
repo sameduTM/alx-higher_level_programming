@@ -7,11 +7,12 @@ from models.base import Base
 
 class TestBase(unittest.TestCase):
     def test_auto_assign_id(self):
-        my_instance = Base()
-        my_instance1 = Base(id=26)
-        
-        self.assertEqual(my_instance.id, 1)
-        self.assertEqual(my_instance1.id, 26)
+        my_inst0 = Base()
+        self.assertEqual(my_inst0.id, 1)
+        my_inst1 = Base()
+        self.assertEqual(my_inst1.id, 2)
+        my_inst2 = Base()
+        self.assertEqual(my_inst2.id, 3)
 
 if __name__ == '__main__':
     unittest.main()
