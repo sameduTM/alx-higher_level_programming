@@ -6,7 +6,7 @@ const checkArgs = () => {
   if (isNaN(val)) {
     console.log('Not a number');
   } else {
-    console.log(val);
+    console.log('My number: ' + val);
   }
 };
 
