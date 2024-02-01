@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const checkAgs = () => {
+const checkArgs = () => {
   const numArgs = process.argv.length - 2;
 
   if (numArgs === 0) {
@@ -11,4 +11,4 @@ const checkAgs = () => {
   }
 };
 
-checkAgs();
+checkArgs();
