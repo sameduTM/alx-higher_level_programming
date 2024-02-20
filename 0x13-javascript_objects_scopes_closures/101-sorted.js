@@ -5,9 +5,9 @@ const { dict } = require('./101-data.js');
 const sorted = {};
 
 for (const key in dict) {
-  if (dict.hasOwnProperty(key)) {
+  if (Object.prototype.hasOwnProperty.call(dict, key)) {
     const value = dict[key];
-    if (!sorted.hasOwnProperty(value)) {
+    if (!Object.prototype.hasOwnProperty.call(sorted, value)) {
       sorted[value] = [];
     }
     sorted[value].push(key);
