@@ -1,9 +1,7 @@
 #!/usr/bin/python3
+"""This is a simple MySQLdb script that lists all states in table"""
 import MySQLdb
 import sys
-"""This is a simple MySQLdb script that lists all states in table
-    in the database
-"""
 
 
 def states():
