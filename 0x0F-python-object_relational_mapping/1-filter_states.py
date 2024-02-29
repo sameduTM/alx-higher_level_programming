@@ -12,7 +12,7 @@ def state():
     )
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ")
+    cur.execute("SELECT * FROM states WHERE UPPER(name) LIKE 'N%' ")
 
     states = cur.fetchall()
 
