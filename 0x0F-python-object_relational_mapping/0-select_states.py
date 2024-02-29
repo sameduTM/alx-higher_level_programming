@@ -10,7 +10,7 @@ def states():
     j = sys.argv[2]
     k = sys.argv[3]
 
-    db = MySQLdb.connect(host="localhost", user=i, passwd=j, db=k)
+    db = MySQLdb.connect(host="localhost", user=i, passwd=j, db=k, port=3306)
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id")
