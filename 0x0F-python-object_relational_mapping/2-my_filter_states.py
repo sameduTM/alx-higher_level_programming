@@ -7,6 +7,7 @@ import sys
 
 
 def state():
+    """This is the only function of the module"""
     db = MySQLdb.connect(
         host='localhost', user=sys.argv[1], passwd=sys.argv[2],
         db=sys.argv[3], port=3306
