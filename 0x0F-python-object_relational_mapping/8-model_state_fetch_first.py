@@ -17,7 +17,10 @@ def state():
 
     rows = result.fetchone()
 
-    print(str(rows.id) + ":", rows.name)
+    try:
+        print(str(rows.id) + ":", rows.name)
+    except:
+        print("Nothing")
 
 
 if __name__ == "__main__":
