@@ -19,7 +19,7 @@ def state():
 
     try:
         print(str(rows.id) + ":", rows.name)
-    except:
+    except AttributeError as e:
         print("Nothing")
 
 
