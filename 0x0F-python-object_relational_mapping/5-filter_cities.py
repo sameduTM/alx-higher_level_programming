@@ -21,16 +21,6 @@ def city():
         cities.state_id = states.id WHERE states.name = %s", (argc,))
 
     rows = cur.fetchall()
-    """lst = []
-
-    for row in rows:
-        lst += row
-
-    for i in range(len(lst)):
-        print(lst[i], end='')
-        if (i != len(lst) - 1):
-            print(", ", end='')
-    print("\n")"""
     city_names = [row[0] for row in rows]
     print(", ".join(city_names))
 
