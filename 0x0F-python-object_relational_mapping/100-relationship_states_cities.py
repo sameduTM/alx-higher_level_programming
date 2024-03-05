@@ -13,10 +13,10 @@ def rel():
     """This is the relationship function"""
     Session = sessionmaker(bind=engine)
     session = Session()
-    
+
     calif = State(name="California")
     san_f = City(name="San Francisco", state=calif)
-    
+
     session.add(calif)
     session.commit()
     session.close()
