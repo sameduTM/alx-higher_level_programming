@@ -8,7 +8,8 @@ from sqlalchemy import create_engine, text
 
 
 def state():
-    """This is the only function of script"""
+    """This is the only function of script
+    """
     # create a connection
     with engine.connect() as conn:
         # create a transaction
