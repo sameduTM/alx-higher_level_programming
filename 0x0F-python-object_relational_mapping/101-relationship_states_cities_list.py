@@ -17,9 +17,22 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    results = session.query(State).order_by(State.id)
+    """results = session.query(State).order_by(State.id).all()
 
     for row in results:
         print(f"{row.id}: {row.name}")
         for col in row.cities:
-            print(f"    {col.id}: {col.name}")
+            print(f"    {col.id}: {col.name}")"""
+
+    states_and_cities = (
+        session.query(State)
+        .join(City, State.id == City.state_id)
+        .order_by(State.id, City.id).all()
+    )
+
+    for state in states_and_cities:
+        print(f"{state.id}: {state.name}")
+        for city in state.cities:
+            print(f"    {city.id}: {city.name}")
+
+    session.close()
