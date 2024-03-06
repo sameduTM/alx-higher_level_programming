@@ -8,7 +8,7 @@ from sqlalchemy.orm import relationship
 
 class City(Base):
     """This is the City class"""
-    __tablename__ = 'cities'
+    __tablename__ = "cities"
     id = Column(Integer, primary_key=True, autoincrement=True,
                 unique=True, nullable=False)
     name = Column(String(128), nullable=False)
