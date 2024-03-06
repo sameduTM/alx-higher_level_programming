@@ -1,8 +1,11 @@
--- Create states table in hbtn_0e_101_usa with some data
-CREATE DATABASE IF NOT EXISTS hbtn_0e_101_usa;
+-- Database + tables to test
+DROP DATABASE IF EXISTS test_101;
 
 
-USE hbtn_0e_101_usa;
+CREATE DATABASE IF NOT EXISTS test_101;
+
+
+USE test_101;
 
 
 CREATE TABLE
@@ -54,7 +57,7 @@ INSERT INTO
   cities (state_id, name)
 VALUES
   (3, "Dallas"),
-  (3, "Houston"),
+  (3, "Huston"),
   (3, "Austin");
 
 
