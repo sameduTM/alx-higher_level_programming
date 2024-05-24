@@ -1,3 +1,3 @@
 #!/bin/bash
 # script that takes in a URL, sends a GET request to the URL, and displays the body of the response
-curl -si -GET $1
+if eval "curl -sI $1" | grep -q 'HTTP/1.1 200 OK'; then curl -s -GET $1; fi
