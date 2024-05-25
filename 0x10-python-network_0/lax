@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if URL is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <URL>"
+  exit 1
+fi
+
+URL="$1"
+
+# Use curl to make an OPTIONS request and extract the Allow header
+methods=$(curl -s -I -X OPTIONS "$URL" | grep -i "Allow:")
+
+if [ -n "$methods" ]; then
+  echo "HTTP methods supported by the server:"
+  # Print the Allow header, stripping the 'Allow: ' prefix
+  echo "${methods#Allow: }"
+else
+  echo "No Allow header found or the server does not support OPTIONS method."
+fi
+
