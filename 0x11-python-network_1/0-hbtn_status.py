@@ -2,7 +2,6 @@
 """Write a Python script that fetches https://alx-intranet.hbtn.io/status
 """
 from urllib.request import urlopen
-# from urllib.parse import urlencode
 
 url = "https://alx-intranet.hbtn.io/status"
 
