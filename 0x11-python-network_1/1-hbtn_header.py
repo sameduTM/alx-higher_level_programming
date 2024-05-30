@@ -6,4 +6,6 @@ in the header of the response.
 """
 
 with urlopen(sys.argv[1]) as response:
-    print(response.headers['X-Request-Id'])
+    header = response.headers
+
+print(header['X-Request-Id'])
