@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from urllib.request import urlopen
 import sys
-"""Python3 script that displays the value of the X-Request-Id variable found
+"""Python script that displays the value of the X-Request-Id variable found
 in the header of the response.
 """
 
