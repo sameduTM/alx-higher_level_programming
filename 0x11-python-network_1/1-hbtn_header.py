@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-"""Write a Python script that, displays the value of the X-Request-Id variable
-"""
 from urllib.request import urlopen
 import sys
 
