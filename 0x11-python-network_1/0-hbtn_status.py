@@ -11,6 +11,6 @@ with urlopen(url) as response:
     char_set = response.headers.get_content_charset()
 
 print("Body responses:")
-print("    - type: ", type(body))
-print("    - content: ", body)
-print("    - utf8 content: ", body.decode(char_set))
+print("- type:", type(body))
+print("- content:", body)
+print("- utf8 content:", body.decode(char_set))
