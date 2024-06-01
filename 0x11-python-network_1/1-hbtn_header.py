@@ -7,6 +7,4 @@ in the header of the response.
 
 with urlopen(sys.argv[1]) as response:
     header = response.headers
-    request_id = header.get('X-Request-Id')
-
-print(request_id)
+    print(header['X-Request-Id'])
