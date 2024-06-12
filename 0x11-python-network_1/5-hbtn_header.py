@@ -9,7 +9,7 @@ import sys
 def hbtn_header(url):
     r = requests.get(url)
     headers = r.headers
-    print(headers['X-Request-Id'])
+    print(headers['X-Request-Id'].lower())
 
 
 if __name__ == "__main__":
