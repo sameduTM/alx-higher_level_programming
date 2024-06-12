@@ -8,8 +8,11 @@ import sys
 
 def hbtn_header(url):
     r = requests.get(url)
-    headers = r.headers
-    print(headers['X-Request-Id'].lower())
+    try:
+        headers = r.headers
+        print(headers['X-Request-Id'])
+    except KeyError:
+        pass
 
 
 if __name__ == "__main__":
