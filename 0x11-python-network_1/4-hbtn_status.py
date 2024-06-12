@@ -5,10 +5,9 @@ import requests
 
 def hbtn_status(url):
     r = requests.get(url)
-    x = ' '
     print("Body response:")
-    print(f"    - type: {r.text.__class__}")
-    print(f"    - content: {r.text}")
+    print(f"\t- type: {r.text.__class__}")
+    print(f"\t- content: {r.text}")
 
 
 if __name__ == "__main__":
