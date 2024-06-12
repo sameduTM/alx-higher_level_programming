@@ -15,8 +15,13 @@ def github_commits(repo, owner):
     r = requests.get(
         'https://api.github.com/repos/{}/{}/commits'.format(owner, repo))
     cmt = r.json()
+    len(cmt)
+    if len(cmt) < 10:
+        ln = len(cmt)
+    else:
+        ln = 10
     i = 0
-    while i < 10:
+    while i < ln:
         print(f"{cmt[i]['sha']}: {cmt[i]['commit']['author']['name']}")
         i += 1
 
